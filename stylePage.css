@@ -1,0 +1,400 @@
+/*BEGINNING OF GENERAL ADJUSTMENTS*/
+/*#284b63*/
+html {
+    background-image: url("imgs/background_edited.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Recursive', sans-serif;
+    color: #fff8eb;
+
+}
+
+body {
+    margin: auto;
+    align-content: center;
+    text-align: center;
+    line-height: 25px;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 28px;
+    text-align: left;
+    text-decoration: underline;
+}
+
+h3 {
+    font-size: 20px;
+    text-align: left;
+    text-indent: 25px;
+}
+
+p {
+    text-align: justify;
+    font-size: 14px;
+}
+
+a {
+    color: #fff8eb;
+    text-decoration: none;
+}
+
+a:visited {
+    color: inherit;
+}
+
+img {
+    width: 40px;
+    height: 40px;
+}
+
+.ul_noStyle {
+    list-style-type: none;
+    text-align: left;
+}
+
+
+/*END OF GENERAL ADJUSTMENTS*/
+
+/*BEGINNING OF BARNAV*/
+.barnav {
+    width: 100%;
+    min-width: 100%;
+    height: 60px;
+    min-height: 60px;
+    left: 0;
+    top: 0;
+    margin: auto;
+    position: fixed;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 75%);
+}
+
+.barnav ul {
+    width: auto;
+    height: inherit;
+    margin: auto;
+    padding-top: 5px;
+}
+
+.barnav li {
+    width: 120px;
+    height: 75px;
+    float: left;
+    margin-top: 15px;
+    margin-left: 5%;
+    text-align: left;
+    vertical-align: middle;
+}
+
+#logo {
+    width: 40px;
+    height: auto;
+    padding: 8px 0px 0px 10px;
+    float: left;
+}
+
+/*END OF BARNAV*/
+
+/*BEGINNING OF CONTENT*/
+.content {
+    height: 100%;
+    margin: 10px;
+    margin-top: 70px;
+    padding: 5px;
+    align-content: center;
+    text-align: center;
+    border: solid 1px #fff8eb;
+}
+
+/*BEGINNING OF BLOCK*/
+.block {
+    margin: auto;
+    padding-top: 40px;
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-bottom: 35px;
+}
+
+#myImg {
+    width: 15%;
+    min-width: 120px;
+    height: auto;
+    border: solid 2px #fff8eb;
+    border-radius: 20px;
+}
+
+/*BEGINNING OF ABOUT*/
+.about {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 3fr);
+    grid-template-rows: repeat(auto-fit, 1fr);
+    grid-template-areas:
+        "actually      actually"
+        "experience    experience"
+        "skills        languages"
+        "certificates  others";
+    grid-column-gap: 25px;
+
+}
+
+/*END OF ABOUT*/
+.actually {
+    grid-area: actually;
+}
+
+/*BEGINNING OF EXPERIENCE*/
+.experience {
+    grid-area: experience;
+}
+
+#exp {
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+    text-align: justify;
+}
+
+#expCityHall {
+    margin: 0px;
+    padding: 15px;
+    color: #fff8eb;
+    background-color: #284b63;
+    border-radius: 15px 15px 0px 0px;
+    text-align: left;
+}
+
+#exp p {
+    margin: 0px;
+    padding: 15px;
+    border: solid 4px #284b63;
+    border-radius: 0px 0px 5px 5px;
+    text-indent: 10px;
+}
+
+.skills {
+    grid-area: skills;
+}
+
+.skill {
+    width: 350px;
+    height: 25px;
+    left: 0px;
+    padding: 0px;
+    background-color: #d9d9d9;
+    border-radius: 50px;
+    text-align: left;
+    text-indent: 15px;
+}
+
+.skill h4 {
+    height: 25px;
+    padding: 0px;
+    margin: 0px;
+    background-color: #437394;
+    border-radius: 50px;
+    vertical-align: middle;
+}
+
+#java {
+    width: 80%;
+}
+
+#html {
+    width: 65%;
+}
+
+#css {
+    width: 35%;
+}
+
+.languages {
+    grid-area: languages;
+}
+
+#spanish {
+    width: 100%;
+}
+
+#english {
+    width: 70%;
+}
+
+/*END OF SKILLS*/
+
+/*BEGINNING OF CERTIFICATES*/
+.certificates {
+    grid-area: certificates;
+}
+
+.certs {
+    text-align: left;
+    padding-left: 15px;
+    left: 0px;
+}
+
+/*END OF CERTIFICATES*/
+
+
+/*BEGINNING OF OTHERS*/
+.others {
+    grid-area: others;
+}
+
+#othersList {
+    margin: 0px;
+    padding: 0px;
+    text-align: left;
+}
+
+#othersList li a {
+    padding-bottom: 25px;
+}
+
+#othersList img {
+    width: 26px;
+    height: auto;
+    margin-right: 10px;
+    padding-top: 15px;
+    border: solid 1px #fff8eb;
+}
+
+/*END OF OTHERS*/
+/*BEGINNING OF PROJECTS*/
+.projects ul {
+    text-align: left;
+    margin: 0px;
+    padding: 0px;
+}
+
+#mariomImg {
+    width: 50%;
+    height: auto;
+    margin-top: 10px;
+    border: solid 2px #fff8eb;
+    border-radius: 5px;
+}
+
+#mariomImg:hover {
+    transform: translateY(-10px);
+}
+
+#info {
+    width: 12px;
+    height: auto;
+    vertical-align: middle;
+    margin-bottom: 5px;
+}
+
+.imgComment {
+    font-size: 12px;
+    opacity: 90%;
+}
+
+/*END OF PROJECTS*/
+
+
+/*BEGINNING OF CONTACT*/
+.contact {
+    text-align: left;
+}
+
+.contact p {
+    width: auto;
+    height: 25px;
+    text-align: left;
+}
+
+#imgMail {
+    width: 22px;
+    height: 22px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+/*END OF CONTACT*/
+
+/*END OF BLOCK*/
+
+/*END OF CONTENT*/
+
+/*BEGINNING OF FOOTER*/
+.footer {
+    width: 100%;
+    height: 120px;
+    position: static;
+    bottom: 0px;
+    margin: 0px;
+    padding-top: 15px;
+    background-color: rgba(0, 0, 0, 75%);
+
+}
+
+.footer p {
+    align-content: center;
+    text-align: center;
+    font-size: 10px;
+    opacity: 75%;
+
+}
+
+/*END OF FOOTER*/
+
+/*BEGINNING OF MEDIA ADJUSTMENTS*/
+@media only screen and (max-width: 646px) {
+    .barnav {
+        height: 150px;
+    }
+
+    .content {
+        margin-top: 150px;
+    }
+
+    .link {
+        display: block;
+        padding-top: 100px;
+        margin-top: -100px;
+    }
+
+    .about {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(auto-fit, 1fr);
+        grid-template-areas:
+            "actually"
+            "experience"
+            "skills"
+            "languages"
+            "certificates"
+            "others";
+        grid-row-gap: 20px;
+    }
+
+    .skill {
+        width: 175px;
+        text-shadow: 2px 2px 5px #437394;
+    }
+
+    #mariomImg {
+        width: 95%;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .about {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(auto-fit, 1fr);
+        grid-template-areas:
+            "actually"
+            "experience"
+            "skills"
+            "languages"
+            "certificates"
+            "others";
+    }
+}
+
+/*END OF MEDIA ADJUSTMENTS*/
