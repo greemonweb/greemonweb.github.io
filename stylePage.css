@@ -270,7 +270,7 @@ img {
     padding: 0px;
 }
 
-#mariomImg {
+.projImgs {
     width: 50%;
     height: auto;
     margin-top: 10px;
@@ -278,7 +278,7 @@ img {
     border-radius: 5px;
 }
 
-#mariomImg:hover {
+.projImgs:hover {
     transform: translateY(-10px);
 }
 
@@ -377,7 +377,7 @@ img {
         text-shadow: 2px 2px 5px #437394;
     }
 
-    #mariomImg {
+    .projImgs {
         width: 95%;
         height: auto;
     }
