@@ -21,20 +21,20 @@ h1 {
 }
 
 h2 {
-    font-size: 28px;
+    font-size: 32px;
     text-align: left;
     text-decoration: underline;
 }
 
 h3 {
-    font-size: 20px;
+    font-size: 24px;
     text-align: left;
     text-indent: 25px;
 }
 
 p {
     text-align: justify;
-    font-size: 14px;
+    font-size: 18px;
 }
 
 a {
@@ -127,142 +127,7 @@ img {
     border-radius: 20px;
 }
 
-/*BEGINNING OF ABOUT*/
-.about {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 3fr);
-    grid-template-rows: repeat(auto-fit, 1fr);
-    grid-template-areas:
-        "actually      actually"
-        "experience    experience"
-        "skills        languages"
-        "certificates  others";
-    grid-column-gap: 25px;
 
-}
-
-/*END OF ABOUT*/
-.actually {
-    grid-area: actually;
-}
-
-/*BEGINNING OF EXPERIENCE*/
-.experience {
-    grid-area: experience;
-}
-
-#exp {
-    margin: 0px;
-    padding: 0px;
-    font-size: 16px;
-    text-align: justify;
-}
-
-#expCityHall {
-    margin: 0px;
-    padding: 15px;
-    color: #fff8eb;
-    background-color: #284b63;
-    border-radius: 15px 15px 0px 0px;
-    text-align: left;
-}
-
-#exp p {
-    margin: 0px;
-    padding: 15px;
-    border: solid 4px #284b63;
-    border-radius: 0px 0px 5px 5px;
-    text-indent: 10px;
-}
-
-.skills {
-    grid-area: skills;
-}
-
-.skill {
-    width: 350px;
-    height: 25px;
-    left: 0px;
-    padding: 0px;
-    background-color: #d9d9d9;
-    border-radius: 50px;
-    text-align: left;
-    text-indent: 15px;
-}
-
-.skill h4 {
-    height: 25px;
-    padding: 0px;
-    margin: 0px;
-    background-color: #437394;
-    border-radius: 50px;
-    vertical-align: middle;
-}
-
-#java {
-    width: 80%;
-}
-
-#html {
-    width: 65%;
-}
-
-#css {
-    width: 35%;
-}
-
-.languages {
-    grid-area: languages;
-}
-
-#spanish {
-    width: 100%;
-}
-
-#english {
-    width: 70%;
-}
-
-/*END OF SKILLS*/
-
-/*BEGINNING OF CERTIFICATES*/
-.certificates {
-    grid-area: certificates;
-}
-
-.certs {
-    text-align: left;
-    padding-left: 15px;
-    left: 0px;
-}
-
-/*END OF CERTIFICATES*/
-
-
-/*BEGINNING OF OTHERS*/
-.others {
-    grid-area: others;
-}
-
-#othersList {
-    margin: 0px;
-    padding: 0px;
-    text-align: left;
-}
-
-#othersList li a {
-    padding-bottom: 25px;
-}
-
-#othersList img {
-    width: 26px;
-    height: auto;
-    margin-right: 10px;
-    padding-top: 15px;
-    border: solid 1px #fff8eb;
-}
-
-/*END OF OTHERS*/
 /*BEGINNING OF PROJECTS*/
 .projects ul {
     text-align: left;
@@ -282,7 +147,7 @@ img {
     transform: translateY(-10px);
 }
 
-#info {
+.info {
     width: 12px;
     height: auto;
     vertical-align: middle;
@@ -294,8 +159,35 @@ img {
     opacity: 90%;
 }
 
+#tictactoe {
+    max-width: 500px;
+}
+
 /*END OF PROJECTS*/
 
+/*BEGINNING OF INTERESTING LINKS*/
+.intLinks {
+    text-align: left;
+}
+
+.intLinks ul {
+    list-style-type: none;
+}
+
+.intLinks a {
+    display: inline-block;
+    margin-bottom: 15px;
+    vertical-align: middle;
+    height: 32px;
+}
+
+.intLinks img {
+    width: 32px;
+    height: auto;
+    margin: auto 10px auto auto;
+}
+
+/*END OF INTERESTING LINKS*/
 
 /*BEGINNING OF CONTACT*/
 .contact {
@@ -324,7 +216,7 @@ img {
 /*BEGINNING OF FOOTER*/
 .footer {
     width: 100%;
-    height: 120px;
+    height: 150px;
     position: static;
     bottom: 0px;
     margin: 0px;
@@ -346,7 +238,7 @@ img {
 /*BEGINNING OF MEDIA ADJUSTMENTS*/
 @media only screen and (max-width: 646px) {
     .barnav {
-        height: 150px;
+        height: 250px;
     }
 
     .content {
@@ -355,26 +247,8 @@ img {
 
     .link {
         display: block;
-        padding-top: 100px;
-        margin-top: -100px;
-    }
-
-    .about {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(auto-fit, 1fr);
-        grid-template-areas:
-            "actually"
-            "experience"
-            "skills"
-            "languages"
-            "certificates"
-            "others";
-        grid-row-gap: 20px;
-    }
-
-    .skill {
-        width: 175px;
-        text-shadow: 2px 2px 5px #437394;
+        padding-top: 200px;
+        margin-top: -200px;
     }
 
     .projImgs {
@@ -383,18 +257,17 @@ img {
     }
 }
 
-@media only screen and (max-width: 950px) {
-    .about {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(auto-fit, 1fr);
-        grid-template-areas:
-            "actually"
-            "experience"
-            "skills"
-            "languages"
-            "certificates"
-            "others";
+@media only screen and (min-witdh:646px) and (max-width: 768px) {
+    .barnav {
+        height: 150px;
+    }
+
+    .link {
+        display: block;
+        padding-top: 100px;
+        margin-top: -100px;
     }
 }
+
 
 /*END OF MEDIA ADJUSTMENTS*/

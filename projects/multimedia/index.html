@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Silicon Valley</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="./images/logo.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;900&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <h1>SILICON VALLEY</h1>
+  </header>
+  <div id="bombilla"></div>
+  <nav id="navbar">
+    <a id="home" href="./index.html"><img id="logo" src="./images/logo.png" /></a>
+    <div id="navLinks">
+      <a href="https://www.piedpiper.com" target="_blank">pied piper</a>
+      <a href="./temporadas.html">temporadas</a>
+      <a href="./personajes.html">personajes</a>
+      <a href="./destacado.html">destacado</a>
+    </div>
+  </nav>
+  <div class="clear"></div>
+  <div id="content">
+    <div id="sinopsis">
+      <h2>Sinopsis</h2>
+      <p>
+        Richard es un tímido programador que vive en una
+        <a href="./destacado.html#incubadora">"incubadora"</a>
+        con Cabezón, Dinesh, Gilfoyle y Erlich (dueño de la casa), sus únicos
+        amigos. Sin saberlo Richard crea un algoritmo revolucionario y las
+        grandes empresas del valle se pelearán por conseguir el algoritmo. Las
+        decisiones de Richard repercutirán en la historia junto a otros sucesos,
+        algunos más afortunados que otros.
+      </p>
+    </div>
+    <div id="trailer">
+      <h2>Trailer</h2>
+      <div class="videoP">
+        <iframe src="https://www.youtube.com/embed/mZW7RxAo63g" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+    <div class="song-class">
+      <h2>Canciones</h2>
+      <p>
+        La serie de Silicon Valley cuenta con un disco con varias de las canciones que salen
+        a lo largo de la serie, encontrandose entre ellas la canción principal de la intro,
+        las del final de cada capítulo, etc. Aquí puedes escucharlo:
+      </p>
+      <div id="songBlock">
+        <img src="./images/siliconValleyMusic.jpg" />
+        <div id="imgControler">
+          <div id="play-pause">
+            <img id="img-play" src="./images/playIcon.png" />
+          </div>
+        </div>
+        <div id="mediaControler">
+          <div id="previous-controler">
+            <img src="./images/previousIcon.png" />
+          </div>
+          <div id="play-pause-controler">
+            <img id="img-play-pause" src="./images/playIcon.png" />
+          </div>
+          <div id="next-controler"><img src="./images/nextIcon.png" /></div>
+          <div class="clear"></div>
+          <div id="songPlaying">
+            <h3 id="currentSong">Strech Your Face</h3>
+          </div>
+          <progress id="progSong" min="0" max="100" value="0"></progress>
+        </div>
+        <div id="volume">
+          <div id="moreVolume"><img src="./images/upVolume.png" /></div>
+          <div id="volumeRange">
+            <div id="range"></div>
+          </div>
+          <div id="lessVolume"><img src="./images/downVolume.png" /></div>
+        </div>
+        <audio id="audioSong" src="./audio/Strech_Your_Face.webm" onchange="songTime()"></audio>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div id="redes">
+      <ul>
+        <li><a href="https://www.instagram.com/siliconhbo/" target="_blank">Instagram</a></li>
+        <li><a href="https://twitter.com/SiliconHBO" target="_blank">Twitter</a></li>
+        <li><a href="https://www.facebook.com/SiliconHBO" target="_blank">Facebook</a></li>
+      </ul>
+    </div>
+  </footer>
+  <script src="./js/functions.js"></script>
+  <script src="./js/audioPlayer.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,360 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: "Maven Pro", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: white;
+  /*#047863,#06a261*/
+  background: linear-gradient(0deg, #113d35 0%, #06a261 100%);
+  /*
+  background: #001800;
+  animation: background-animation 2.5s infinite;*/
+}
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 28px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  text-align: center;
+}
+
+.clear {
+  clear: both;
+}
+
+header {
+  background-image: url("./images/svFondoH1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 400px;
+  text-align: center;
+}
+header:hover {
+  background-image: url("./images/svFondoH2.jpeg");
+}
+header:hover ~ #bombilla{
+  top:-50px;
+}
+header h1 {
+  padding-top: 25px;
+  color: #cc0000;
+  font-size: 80px;
+  font-weight: 900;
+}
+#bombilla {
+  position: fixed;
+  top: -300px;
+  width: 100%;
+  height: 200px;
+  background-image: url("./images/bombilla.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 100%;
+  opacity: 75%;
+  transition: top 1.5s; 
+}
+#bombilla:hover{
+  top: -50px;
+}
+#bombilla:hover header{
+  background-image: url("./images/svFondoH2.jpeg");
+}
+#navbar {
+  width: 100%;
+  height: 50px;
+  background-color: #113d35;
+  border-bottom: solid 5px #047863 /*#06a261*/;
+}
+
+#navLinks {
+  margin: auto;
+  width: 900px;
+  height: 50px;
+}
+
+#navbar a {
+  padding: 5px 15px 0px 15px;
+  float: left;
+  width: 150px;
+  height: 45px;
+  font-size: 26px;
+}
+
+#navbar a:hover {
+  border-bottom: solid 5px #ffffff;
+  height: 40px;
+}
+#logo {
+  width: 40px;
+  height: 40px;
+}
+#home:hover {
+  border-bottom: solid 0px #ffffff;
+}
+.sticky {
+  position: sticky;
+  top: 0%;
+  z-index: 9999;
+}
+
+#content {
+  padding: 15px 25px 15px 25px;
+  height: auto;
+  min-height: 1080px;
+  background-image: url("./images/svFondo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+#content h2 {
+  margin: 50px 0px 25px 0px;
+  padding-left: 5px;
+  border-left: solid 5px #cc0000;
+}
+
+#content p {
+  padding: 5px;
+  background-color: rgba(0, 24, 0, 0.45);
+}
+
+#sinopsis a {
+  margin: initial;
+}
+
+#introVideo {
+  margin: auto;
+  width: 75%;
+}
+
+video{
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+iframe{
+  width: 100%;
+  min-height: 630px;
+  height: 100%;
+  margin: auto;
+}
+video:hover,iframe:hover {
+  transform: scale(1.05);
+  transition: all 0.25s linear;
+}
+.videoP {
+  width: 90%;
+  margin: 10px auto 10px auto;
+}
+
+#songBlock {
+  margin: 10px auto 10px auto;
+  width: 90%;
+  height: 200px;
+  background: rgba(0, 0, 0, 0.25);
+}
+#songBlock * {
+  margin: 0px;
+}
+#songBlock img {
+  float: left;
+  width: 200px;
+  height: 200px;
+}
+#imgControler {
+  position: absolute;
+  float: left;
+  width: 200px;
+  height: 200px;
+}
+#play-pause {
+  margin: 50px;
+  padding: 25px;
+  float: left;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50px 50px;
+  text-align: center;
+  opacity: 0;
+}
+#play-pause:hover {
+  opacity: 1;
+}
+#play-pause img {
+  width: 50px;
+  height: 50px;
+}
+#mediaControler {
+  position: relative;
+  margin: auto;
+  padding: 10px;
+  float: left;
+  width: 400px;
+  height: 180px;
+}
+
+#mediaControler * {
+  float: left;
+}
+#play-pause-controler img {
+  width: 75px;
+  height: 75px;
+}
+#previous-controler img,
+#next-controler img {
+  padding: 12.5px;
+  width: 50px;
+  height: 50px;
+}
+
+#songPlaying{
+  padding: 10px;
+  float: left;
+  width: 100%;
+}
+#songPlaying h3{
+  margin: auto;
+  padding-top: 15px;
+  width: 100%;
+  height: 60px;
+}
+
+progress{
+  width: 100%;
+  height: 5px;
+  background-color: rgba(17, 61, 53, 0.5);
+  border-radius: 50px;
+  border-color: #113d35;
+}
+
+progress::-moz-progress-bar
+{
+    background: rgb(251, 251, 251);
+    border-radius: 50px;
+}
+
+#volume {
+  margin: 20px 50px;
+  float: right;
+}
+#volume * {
+  float: none;
+}
+#volume img {
+  width: 25px;
+  height: 25px;
+}
+#moreVolume,
+#lessVolume {
+  width: 25px;
+  height: 25px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50px 50px;
+}
+#volumeRange {
+  margin: 5px 0px 5px 7.5px;
+  width: 10px;
+  height: 100px;
+  background-color: rgba(61, 61, 61, 0.7);
+  border-radius: 50px 50px;
+}
+#range {
+  float: left;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 50px 50px;
+}
+#temporadas{
+  width: 100%;
+  height: 1950px;
+}
+#temporadas div:nth-child(even){
+  float: right;
+}
+
+.temp{
+  float: left;
+  width: 45%;
+}
+
+
+#famososLista{
+  padding: 25px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+#fomososLista li{
+  margin: 5px;
+}
+#famososLista a{
+  border-bottom: solid 1px white;
+}
+#personajes{
+  width: 100%;
+  height: 2100px;
+}
+.personaje{
+  margin: 10px;
+  float: left;
+  width: 30%;
+  background-color: #113d35;
+  border: solid 5px #047863;
+  border-radius: 5px;
+  text-align: center;
+}
+.personaje h3{
+  padding-top: 5px;
+  width: 100%;
+  height: 45px;
+  background-color: #04786300;
+  text-align: center;
+}
+.personaje h3:hover{
+  transition: background 1s;
+  background-color: #047863;
+}
+.personaje img{
+  margin: auto;
+  max-width: 100%;
+  height: 450px;
+}
+.personaje p{
+  margin: 0px;
+  padding: 0px;
+  height: 150px;
+  text-align: justify;
+}
+footer {
+  border-top: solid 2px #06a261;
+  height: 100px;
+}
+#redes{
+  margin: auto;
+  width: 90%;
+  height: 100px;
+}
+footer li{
+  margin-top: 40px;
+  float: left;
+  width: 33.3%;
+  text-align:center;
+  list-style-type: none;
+}

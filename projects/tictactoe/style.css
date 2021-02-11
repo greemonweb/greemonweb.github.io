@@ -1,0 +1,10 @@
+table *{
+    border: solid 2px black;
+    width: 75px;
+    height: 75px;
+    text-align: center;
+    font-size: 35px;
+}
+table{
+    background-color: royalblue;
+}
